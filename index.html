@@ -1,10 +1,22 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>jdev6</title>
-        <link rel="shortcut icon" href="/images/dog.gif" type="image/x-icon"/>
+        <link rel="shortcut icon" href="/res/icon.gif" type="image/x-icon"/>
     </head>
 
     <body>
-        <a href="https://github.com/jdev6">    <img src="/images/github.png"></a>
-    </body>
+        <div align="right">
+        <iframe src="https://ghbtns.com/github-btn.html?user=jdev6&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+        </div>
+
+        <script>
+        if(location.search.substring(1) === "dog"){
+            document.body.innerHTML += '<img src="/res/annoyingdog.gif">'    
+        }else {
+            document.body.innerHTML += '<div align="center"><font size="10"><br><br><b>Work in progress page</b></font></div>'
+        };
+        </script>
+
+            </body>
 </html>
