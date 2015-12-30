@@ -6,15 +6,16 @@
     </head>
 
     <body>
-        <div align="right">
-        <iframe src="https://ghbtns.com/github-btn.html?user=jdev6&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
-        </div>
-
+        
         <script>
         if(location.search.substring(1) === "dog"){
             document.body.innerHTML += '<img src="/res/annoyingdog.gif">'    
         }else {
-            document.body.innerHTML += '<div align="center"><font size="10"><br><br><b>Work in progress page</b></font></div>'
+            document.body.innerHTML += `
+                <div align="right">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=jdev6&type=follow&count=true&size=large" frameborder="0" scrolling="0" width="220px" height="30px"></iframe>
+                </div>
+                <div align="center"><font size="10"><br><br><b>Work in progress page</b></font></div>`
         };
         </script>
 
