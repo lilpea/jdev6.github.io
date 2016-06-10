@@ -23,7 +23,10 @@
         }
         else {
             // Existing
-            setTimeout(function(){$("main").innerHTML = "<img src="+atob(location.search.substring(1))+" />";});
+            setTimeout(function(){
+                document.body.style.backgroundColor = '#222222';
+                $("main").innerHTML = "<img src="+atob(location.search.substring(1))+" />";
+            });
         }
     </script>
 
