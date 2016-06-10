@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+<head>
+
+    <script>
+        var doit;
+        var $ = function(x) { return document.getElementById(x); };
+
+        if (location.search === "") {
+            // New
+            setTimeout(function(){$("main").innerHTML =
+            `<input type="text" id="url_text"/>
+            <br/>
+            <input id="url_button" type="button" value="Bop" onclick="doit();" />
+            <br/>
+            <p id="new_url">url here</p>`;}, 0);
+
+            doit = function() {
+                var new_url = location.origin+"/?"+btoa($("url_text").value);
+                $("new_url").innerHTML = "<a href="+new_url+">url: "+new_url+"</a>";
+            }
+        }
+        else {
+            // Existing
+            setTimeout(function(){$("main").innerHTML = "<img src="+atob(location.search.substring(1))+" />";});
+        }
+    </script>
+
+</head>
+
+<body>
+    <div align="center" id="main" />   
+</body>
+
+</html>
