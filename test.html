@@ -17,7 +17,7 @@
             <p id="new_url">url here</p>`;}, 0);
 
             doit = function() {
-                var new_url = location+"/?"+btoa($("url_text").value);
+                var new_url = location+"?"+btoa($("url_text").value);
                 $("new_url").innerHTML = "<a href="+new_url+">url: "+new_url+"</a>";
             }
         }
