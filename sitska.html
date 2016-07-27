@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>curiosity satisfied</title>
+    </head>
+
+    <body>
+
+        <center>
+
+            <img style="max-width: 100%; width: auto; height: auto;" id="sitska-img" />
+
+            <script>
+                var imageList = ['S2wAt1H.gif', 'UtTaTfm.gif', 'mJVRa37.gif', 'CExILin.png', 'wd6rbBd.png', '8C8Nyxj.png', 'ID20BWc.gif',
+                    'sL5ls7z.gif', '0XpNOcb.gif', 'nA2MlJG.gif', 'ArDqI3Z.gif', 's6DYjoR.gif', 'FaCoF52.png', 'aVIv6hf.gif', 'fU50obH.gif',
+                    'x2WjuuJ.gif', 'IUwoTM5.gif', 'TCrkUHI.png', 'xPu2qPi.png', '2EG2QH5.gif', 'chgele7.png', 'mjPnXKA.png', 'Z406rNF.png',
+                    'YrzWSfY.gif', 'acf8nls.gif', 'HEJ4KLG.gif', 'NIFGsti.gif', 'QIb4fEX.png', 'olrmAqP.gif', '0ktdMKD.png', 'baZlr10.gif',
+                    'YfIN4bT.png', 'rAI7Jwp.png', 'w0apvS6.png', 'bbdBlXX.gif', 'EKsmuhm.gif', 'FZgvDqQ.gif', 'yMaQd6X.png', 'DUDLGpj.png',
+                    'sLWYhyW.png', 'DyRsZKN.png', 'MYJirGA.png', 'rqnfRs1.png', 'iamPg3K.png', '81MdKym.png', 'FVwl7yv.png', '8ccm4Pt.png',
+                    '6TlfqP1.png', 'jD2CKbt.png', 'cx4OR0R.png', 'SjIDONg.png', 'TG2bIeU.png', 'KnwVJ99.png', 'wEK6Dtf.png', 'f4HgvHQ.png',
+                    'm16bsjr.png', 'FAj6uZm.png', 'F9I0jll.png', 'CtIq2Bp.png', 'Z8QjLjl.png', '1R0I0UA.png', 'Q7lwKJ8.png', 'Y6PHrkt.png',
+                    'Lp6GCyG.png', '0Pc5VVU.png', 'V5CNKCu.png', 'f21EEKG.png', 'asBLtJU.gif', 'PV0Cqep.gif', 'xpgMbUQ.gif', 'C2FNN74.gif',
+                    'WdS4aGa.gif', 'HevmWtk.gif', 'noXoJEd.gif', 'REI03Os.gif', 'o094b8a.gif', 'A8LC1GW.gif', 'nuTe2mu.png', 'kqZ8GsO.gif',
+                    'lu1aMPs.gif', 'WJ7TMdO.png', 'KLQgddl.png', '5FZCTgB.png', 'gHwcOsK.png', '0aC6E8r.png', 'Paji3sR.png', 'ols9w4p.png',
+                    'mZjVkAJ.png', 'TBJgGDT.png', 'MRKkXjG.png', 'wZAMOAE.png', 'LCfqomG.png', 'jc7RFmr.png', 'zY7Pqu1.png', 'PeyFoOI.png',
+                    'iPo9Fwp.png', 'rrskkMT.png', 'Ux0RrQy.gif', 'WLHaADf.png', 'GpNEob6.jpg', '9GOGjwW.jpg', 'FosGSeD.jpg', 'ydiS1B4.jpg',
+                    'GpNEob6.jpg', '9GOGjwW.jpg', 'FosGSeD.jpg', 'ydiS1B4.jpg', 'aM0g6i6.png', 'J2liJo2.png','ivpmfDg.png'];
+
+
+                var element = document.getElementById("sitska-img");
+
+                function genImg() {
+                    var img = "https://i.imgur.com/" + imageList[Math.floor(Math.random() * imageList.length)];
+
+                    element.src = img;
+                }
+
+                genImg();
+
+            </script>
+
+            <br>
+            <button onclick="genImg();">curiosity not satisfied yet</button>
+
+        </center>
+
+    </body>
+
+</html>
