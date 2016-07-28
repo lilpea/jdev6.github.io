@@ -26,15 +26,16 @@
                     'lu1aMPs.gif', 'WJ7TMdO.png', 'KLQgddl.png', '5FZCTgB.png', 'gHwcOsK.png', '0aC6E8r.png', 'Paji3sR.png', 'ols9w4p.png',
                     'mZjVkAJ.png', 'TBJgGDT.png', 'MRKkXjG.png', 'wZAMOAE.png', 'LCfqomG.png', 'jc7RFmr.png', 'zY7Pqu1.png', 'PeyFoOI.png',
                     'iPo9Fwp.png', 'rrskkMT.png', 'Ux0RrQy.gif', 'WLHaADf.png', 'GpNEob6.jpg', '9GOGjwW.jpg', 'FosGSeD.jpg', 'ydiS1B4.jpg',
-                    'GpNEob6.jpg', '9GOGjwW.jpg', 'FosGSeD.jpg', 'ydiS1B4.jpg', 'aM0g6i6.png', 'J2liJo2.png','ivpmfDg.png'];
+                    'GpNEob6.jpg', '9GOGjwW.jpg', 'FosGSeD.jpg', 'ydiS1B4.jpg', 'aM0g6i6.png', 'J2liJo2.png','ivpmfDg.png'
+                ].map(function(url) {
+                    return "https://i.imgur.com/" + url;
+                });
 
 
                 var element = document.getElementById("sitska-img");
 
                 function genImg() {
-                    var img = "https://i.imgur.com/" + imageList[Math.floor(Math.random() * imageList.length)];
-
-                    element.src = img;
+                    element.src = imageList[Math.floor(Math.random() * imageList.length)];
                 }
 
                 genImg();

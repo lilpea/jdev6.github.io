@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>get some upjons</title>
+    </head>
+
+    <body>
+
+        <style>
+            body {
+                background-image: url(http://i.imgur.com/FfjwebF.gif);
+            }
+            #text {
+                background-color: rgb(255,255,255);
+                border-width: 10;
+            }
+        </style>
+
+        <center>
+
+            <p id="text">You can post this website on /r/JonTron and get 720 upjons</p>
+
+            <script>
+                function gen() {
+                    var el = document.getElementById("text");
+                    var word = wordList[Math.floor(Math.random() * 1000)];
+                    var upjons = 56 + Math.floor(Math.random() * 1000); //Now that's a random number a sensible person could understand
+
+                    el.innerHTML = "You can post \"" + word + "\" on /r/JonTron and get " + upjons + " upjons.";
+                }
+            </script>
+
+            <script src="words.js" onload="gen();"></script>
+
+            <br>
+            <button onclick="gen();">more upjons</button>
+
+        </center>
+
+    </body>
+
+</html>
