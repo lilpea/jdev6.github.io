@@ -5,13 +5,23 @@ $site_width: 650px;
     -moz-box-sizing: border-box;
 }
 
+audio {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 body {
-    background: #333;
-    color: #eee;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    background: url(/res/bg.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-family: verdana;
+    text-align: center;
+    
+    margin: 1em 2em 0 2em;  
 }
 
 .header {
@@ -73,9 +83,29 @@ p, li {
 }
 
 a {
-    color: #A3FF57;
+    color: #b9ff80;
     text-decoration: none;
     border-bottom: 1px dotted #A3FF57;
+
+    &:hover {
+        color: #BDFF87;
+        border-bottom-color: #BDFF87;
+    }
+}
+
+.back {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+}
+
+button {
+    background-color: Transparent;
+    border: none;
+    color: #459900;
+    text-decoration: none;
+    border-bottom: 1px dotted #A3FF57;
+
 
     &:hover {
         color: #BDFF87;
