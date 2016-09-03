@@ -30,8 +30,9 @@
                     var el = document.getElementById("text");
                     var word = wordList[Math.floor(Math.random() * 1000)];
                     var upjons = 56 + Math.floor(Math.random() * 1000); //Now that's a random number a sensible person could understand
+                    var postlist = ["You can post \"" + word + "\" on /r/JonTron and get " + upjons + " upjons.", "You can post JonTron if he was " + word + " on /r/JonTron and get " + upjons + " upjons."];
 
-                    el.innerHTML = "You can post \"" + word + "\" on /r/JonTron and get " + upjons + " upjons.";
+                    el.innerHTML = postlist[Math.floor(Math.random() * 2)];
                 }
             </script>
 
