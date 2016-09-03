@@ -202,3 +202,14 @@ p > code, li > code {
     }
 }
 
+@media (max-width: 800px) {
+    #text {
+        position: relative;
+        top: 20px
+    }
+}
+@media (max-width: 200px) {
+    center p:first-of-type {
+        right: 12vw !important
+    }
+}
