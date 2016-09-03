@@ -1,6 +1,20 @@
 //Courtesy of https://github.com/first20hours/google-10000-english/
 
 var wordList = [
+    "malkovich",
+    "jontron",
+    "jon",
+    "jacques",
+    "rockington",
+    "crowbar",
+    "that guy",
+    "grommet",
+    "swood",
+    "gyro",
+    "sailor",
+    "coconut 56",
+    "ech",
+    "heugh",
     "the",
     "of",
     "and",
